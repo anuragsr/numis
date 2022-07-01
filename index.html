@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />	
+	<title>Numis Animation Demo</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/examples.css" />
+	<link rel="stylesheet" type="text/css" href="css/section1bg.css" />
+	<link rel="stylesheet" type="text/css" href="css/section3bg.css" />	
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css"/> 
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/> 
+</head>
+<body>
+	<div class="curtain"></div>				
+	<div class="signup-contain">
+		<div class="fp-tableCell">
+			<div class="contact-box">
+				<h2>Exclusive Early Beta Access for Whitelist Members</h2>
+				<br/>
+				<iframe id="signupForm" src="https://api.convertkit.com/v3/forms/372964.html?api_key=na6blZZDTE95reOe2FHYbQ" 
+						style="width: 100%; border: none;" 
+					    scrolling="no">
+			    </iframe>
+
+		<!-- 		<form id="signup-form">					
+					<input id="fname" type="text" placeholder="First Name">
+					<input id="lname" type="text" placeholder="Last Name">
+					<input id="email" type="text" placeholder="Email">
+					<button class="glow-btn" type="submit">Sign Up for Beta Access</button>
+				</form> -->
+			</div>
+		</div>
+		<div class="close-btn"><i class="fa fa-times"></i></div>				
+	</div>
+	<div class="signup-btn-fix">
+		<button class="signup-btn glow-btn">
+			<span class="no-mobile">Sign Up Now!</span>
+			<span class="mobile-only"><i class="fa fa-plus"></i></span>
+		</button>
+	</div>
+	<div id="fullpage">
+		<div class="section active" id="section0">
+			<div class="header">
+				<svg class="header-svg" width="150" height="150">				
+				  	<circle stroke="#fff" fill="none" stroke-width="5" cx="78" cy="75" r="50"/>
+				  	<path stroke="#fff" fill="none" stroke-width="5" 
+				  		d= "M70 25 
+				  			L70 85 
+				  			L50 100 
+				  			L50 50
+				  			L105 100
+				  			L105 50
+				  			L85 65
+				  			L85 125"/>
+				</svg>
+				<div class="nav no-mobile">
+					<a class="txtAnim" href="#features">FEATURES</a>
+					<a class="txtAnim" href="#">WHITE PAPER</a>
+					<a class="txtAnim" href="#about">ABOUT</a>
+					<a class="txtAnim signup-btn" href="#">SIGN UP</a>
+				</div>
+			</div>
+			<div class="svg-contain">
+				<svg id="logo-svg" class="svgAnim" width="150" height="150">
+					<defs>
+						<filter id="sofGlow" height="300%" width="300%" x="-50%" y="-50%">
+							<feMorphology operator="dilate" radius="2" in="SourceAlpha" result="thicken" />
+							<feGaussianBlur in="thicken" stdDeviation="5" result="blurred" />
+							<feFlood flood-color="rgb(0,186,255)" result="glowColor" />
+							<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
+							<feMerge>
+								<feMergeNode in="softGlow_colored"/>
+								<feMergeNode in="SourceGraphic"/>
+							</feMerge>
+						</filter>
+					</defs>
+					<g filter="url(#sofGlow)">						
+					  	<path 
+					  		id="logo-line" 
+					  		d= "M70 25 
+					  			L70 85 
+					  			L50 100 
+					  			L50 50
+					  			L105 100
+					  			L105 50
+					  			L85 65
+					  			L85 125"/>
+					  	<circle id="logo-circ" cx="78" cy="75" r="50"/>
+					</g>
+				</svg>
+			</div>
+			<div class="main-content fp-table">
+				<div class="fp-tableCell">
+					<div class="wrap">
+						<h2 class="txtAnim" id="scrTxt1">
+							The Fastest Real-Time<br/> 
+							Crypto Intelligence Platform<br/> 
+						</h2><br/>
+						<h3 class="txtAnim" id="scrTxt2">
+							Crowdsourced and professionally curated research, analysis, 
+							trading signals, trading algorithms, and market moving news 
+							to give cryptocurrency traders the real-time market intelligence 
+							needed to gain an edge.
+						</h3>
+						<a href="#about"><button class="txtAnim glow-btn" id="scrTxt3">Learn More</button></a>
+					</div>
+				</div>
+				<div class="svg-home">
+					<div class="ol"></div>
+					<div class="chart-img">
+						<img src="img/charts2.png"/>
+						<div class="arrow_box_contain ind01 st-box">
+							<div class="arrow_box neg">
+								<div class="evt-txt">
+									Stocks crashed due to political reasons
+								</div>
+								<div class="evt-num">71</div>
+							</div>
+						</div>
+						<div class="arrow_box_contain ind02 st-box">
+							<div class="arrow_box pos">
+								<div class="evt-txt">
+									Stocks crashed due to political reasons
+								</div>
+								<div class="evt-num">73</div>
+							</div>
+						</div>
+						<div class="arrow_box_contain ind03 st-box">
+							<div class="arrow_box neg">
+								<div class="evt-txt">
+									Stocks crashed due to political reasons
+								</div>
+								<div class="evt-num">76</div>
+							</div>
+						</div>
+						<div class="arrow_box_contain ind1">
+							<div class="arrow_box neg" id="n1">
+								<div class="evt-txt">
+									Stocks crashed due to political reasons
+								</div>
+								<div class="evt-num">78</div>
+							</div>
+						</div>
+						<div class="arrow_box_contain ind2">
+							<div class="arrow_box pos" id="p1">
+								<div class="evt-txt">
+									New economic policy implemented
+								</div>
+								<div class="evt-num">79</div>
+							</div>
+						</div>
+						<div class="arrow_box_contain ind3">
+							<div class="arrow_box neg" id="n2">
+								<div class="evt-txt">								
+									Negative text line 1
+								</div>
+								<div class="evt-num">82</div>
+							</div>
+						</div>
+						<div class="arrow_box_contain ind4">
+							<div class="arrow_box pos" id="p2">
+								<div class="evt-txt">								
+									Positive text line 1
+								</div>
+								<div class="evt-num">85</div>
+							</div>
+						</div>
+						<div class="arrow_box_contain ind5">
+							<div class="arrow_box neg" id="n3">
+								<div class="evt-txt">								
+									Negative text line 2
+								</div>
+								<div class="evt-num">87</div>
+							</div>
+						</div>
+						<div class="arrow_box_contain ind6">
+							<div class="arrow_box neg" id="n4">
+								<div class="evt-txt">								
+									Negative text line 3
+								</div>
+								<div class="evt-num">91</div>
+							</div>
+						</div>
+						<div class="arrow_box_contain ind7">
+							<div class="arrow_box pos" id="p3">
+								<div class="evt-txt">								
+									Positive text line 2
+								</div>
+								<div class="evt-num">93</div>
+							</div>
+						</div>						
+						<div class="arrow_box_contain ind8">
+							<div class="arrow_box pos" id="p4">
+								<div class="evt-txt">								
+									Positive text line 3
+								</div>
+								<div class="evt-num">96</div>
+							</div>
+						</div>
+					</div>
+				    <div class="ticker">
+					    <div class="ticker-contain">
+					    </div>
+				    </div>
+				</div>
+			</div>
+			<div class="footer">
+				<button class="footer-btn glow-btn">Get Early Beta Access!</button>
+				<a href="#about"><i class="fa fa-angle-down down-btn" aria-hidden="true"></i></a>
+			</div>		
+		</div>
+		<div class="section" id="section1">
+			<div class="main-content fp-table">
+				<div class="fp-tableCell white-text">
+					<div class="wrap">
+						<h3 class="thin" id="scrTxt4">						
+							At heart, we are an agency offering the next level of market intelligence in the field of Cryptocurrency.
+							Here is what we are all about:
+						</h3>
+						<div class="service-box">
+							<div class="ab-item">								
+								<div class="tron-contain">								
+									<img src="img/eth-gl.png">
+								</div>
+								Sample about text item 1
+							</div>
+							<div class="ab-item">								
+								<div class="tron-contain">								
+									<img src="img/sw-gl.png">
+								</div>
+								Sample about text item 3
+							</div>
+							<div class="ab-item">								
+								<div class="tron-contain">								
+									<img src="img/dash-gl.png">
+								</div>
+								Sample about text item 5
+							</div>
+							<div class="ab-item">								
+								<div class="tron-contain">								
+									<img src="img/eos-gl.png">
+								</div>
+								Sample about text item 7
+							</div>
+							<div class="ab-item">								
+								<div class="tron-contain">								
+									<img src="img/z-gl.png">
+								</div>
+								Sample about text item 9
+							</div>
+						</div>
+						<div class="service-box">
+							<div class="ab-item">								
+								<div class="tron-contain">								
+									<img src="img/btc-gl.png">
+								</div>
+								Sample about text item 2
+							</div>
+							<div class="ab-item">								
+								<div class="tron-contain">								
+									<img src="img/mon-gl.png">
+								</div>
+								Sample about text item 4
+							</div>
+							<div class="ab-item">								
+								<div class="tron-contain">								
+									<img src="img/xrp-gl.png">
+								</div>
+								Sample about text item 6
+							</div>
+							<div class="ab-item">								
+								<div class="tron-contain">								
+									<img src="img/lite-gl.png">
+								</div>
+								Sample about text item 8
+							</div>
+							<div class="ab-item">								
+								<div class="tron-contain">								
+									<img src="img/name-gl.png">
+								</div>
+								Sample about text item 10
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page-title">ABOUT</div>
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<div class="main-content fp-table">
+				<div class="fp-tableCell white-text">
+					<div class="wrap">
+						<h3 class="thin" style="font-size:1.5em;">						
+							We are heavily invested in the usage of artifical intelligence and its applications to the crypto analytics platform worldwide.
+							Our market research provides all necessary and relevant, updated information to our customers in real-time!
+							Our primary focus is on areas like:
+						</h3><br/>
+						<h3 style="font-size:1.5em;">						
+							LEAD GENERATION<br/>
+							CRYPTO RESEARCH<br/>
+							INNOVATION CELL<br/>
+							CUSTOMER SUPPORT<br/>
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="canvas-ctn globe js-globe">
+				<ul class="globe-list js-list"></ul>
+				<canvas class="globe-canvas js-canvas"></canvas>		
+			</div>
+			<div class="page-title">FEATURES</div>
+		</div>
+		<div class="section" id="section3">
+			<div class="canvas-ctn">
+				<svg viewBox="-350 -250 700 500" class="roadmap-svg">
+					<defs>
+						<filter id="glow1" height="300%" width="300%" x="-50%" y="-50%">
+							<feMorphology operator="dilate" radius="2" in="SourceAlpha" result="thicken" />
+							<feGaussianBlur in="thicken" stdDeviation="3" result="blurred" />
+							<feFlood flood-color="rgb(255,0, 0)" result="glowColor" />
+							<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
+							<feMerge>
+								<feMergeNode in="softGlow_colored"/>
+								<feMergeNode in="SourceGraphic"/>
+							</feMerge>
+						</filter>
+					    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+					      <stop offset="0%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+					      <stop offset="100%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+					    </linearGradient>
+					</defs>
+					<path class="roadmap-ske-1"
+						d="M-500 300 
+							L-310 0
+							L-280 100
+							L-230 50
+							L-200 -50
+							L-100 -20
+							L 0 -100
+							L 100 -40
+							L 150 -120
+							L 250 -170
+							L 500 -370
+							" />
+					<path class="roadmap" 
+						d="M-500 300 
+							L-310 0
+							L-280 100
+							L-230 50
+							L-200 -50
+							L-100 -20
+							L 0 -100
+							L 100 -40
+							L 150 -120
+							L 250 -170
+							L 500 -370
+							" />
+					<rect x="-320" y="-10" rx="10" ry="10" width="20" height="20"
+  						style="fill:#ff2600;" />
+					<text x="-315" y="-30">
+						2017/10
+					    <tspan x="-315" dy="12" style="">TPOC, first Numis design</tspan>
+					</text>
+  					<rect x="-290" y="90" rx="10" ry="10" width="20" height="20"
+  						style="fill:#ff3300;" />
+  					<text x="-290" y="125">
+						2018/02
+					    <tspan x="-290" dy="12">Website v1.0 launched</tspan>
+					</text>
+  					<rect x="-240" y="40" rx="10" ry="10" width="20" height="20"
+  						style="fill:#ff4000;" />
+					<text x="-210" y="45">
+						2018/06
+					    <tspan x="-210" dy="12">1st business case go-live</tspan>
+					</text>
+  					<rect x="-210" y="-60" rx="10" ry="10" width="20" height="20"
+  						style="fill:#ff4d00;" />
+					<text x="-210" y="-110">
+						2018/10
+					    <tspan x="-210" dy="12">Numis v1.5 launched</tspan>
+					    <tspan x="-210" dy="12">Dashboard, iOS app, </tspan>
+					    <tspan x="-210" dy="12">Android app go-live</tspan>
+					</text>
+  					<rect x="-110" y="-30" rx="10" ry="10" width="20" height="20"
+  						style="fill:#ff6600;" />
+					<text x="-110" y="10">
+						2018/12
+					    <tspan x="-110" dy="12">v2.0 launched, 15+ Primary</tspan>
+					    <tspan x="-110" dy="12">clients esablished</tspan>
+					</text>
+  					<rect x="-10" y="-110" rx="10" ry="10" width="20" height="20"
+  						style="fill:#ff8000;" />
+					<text x="-10" y="-145">
+						2019/Q2
+					    <tspan x="-10" dy="12">v3.0 initiated</tspan>
+					    <tspan x="-10" dy="12">Apps get upgraded</tspan>
+					</text>
+					<rect x="90" y="-50" rx="10" ry="10" width="20" height="20"
+  						style="fill:#ff9900;" />
+					<text x="90" y="-10">
+						2019/Q3
+					    <tspan x="90" dy="12">Numis Foundation 1st</tspan>
+					    <tspan x="90" dy="12">Steering Committee and</tspan>
+					    <tspan x="90" dy="12">Advisory Board formed</tspan>
+					</text>				
+  					<rect x="140" y="-130" rx="10" ry="10" width="20" height="20"
+  						style="fill:#ffa600;" />
+					<text x="150" y="-90">
+						2019/Q4
+					    <tspan x="150" dy="12">Numis Blockchain,</tspan>
+					    <tspan x="150" dy="12">Numis Wallet Launch</tspan>
+					</text>					
+  					<rect x="240" y="-180" rx="10" ry="10" width="20" height="20"
+  						style="fill:#ffc000;" />  						
+					<text x="180" y="-210">
+						2020/Q2
+					    <tspan x="180" dy="12">Numis Ecosystem</tspan>
+					    <tspan x="180" dy="12">Expansion</tspan>
+					</text>
+				</svg>
+			</div>
+	    	<div id="controls">
+		        <div id="slider"></div>
+		    </div>
+			<div class="page-title">ROADMAP</div>
+		</div>
+		<div class="section" id="section4">
+			<div class="page-title">PARTNERS</div>
+			<div class="page-heading">				
+				<h3 class="thin">						
+					Our work has been appreciated by many well-known companies in the industry.<br/>
+					We have had the honor of working with these major clients.
+				</h3><br/><br/>
+			</div>
+			<div class="canvas-ctn">
+				<svg viewBox="-350 -250 700 500" class="partner-svg">
+					<defs>										
+						<filter id="rmg">
+						    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+						    <feMerge>
+						        <feMergeNode in="coloredBlur"/>
+						        <feMergeNode in="SourceGraphic"/>
+						    </feMerge>
+						</filter>
+						<filter id="rmg2">
+						    <feGaussianBlur stdDeviation="0.5" result="coloredBlur"/>
+						    <feMerge>
+						        <feMergeNode in="coloredBlur"/>
+						        <feMergeNode in="SourceGraphic"/>
+						    </feMerge>
+						</filter>
+					</defs>
+					<g id="g1">
+						<image href="img/rl1.png" x="-200" y="-100" height="50" width="100"/>
+						<image href="img/rl1g.png" x="-200" y="-100" height="50" width="100" style="opacity: 0;"/>
+						<path class="circuit-fat" 
+							d="M-200 -100 
+								L -240 -140
+								L -240 -180
+								" />
+					  	<circle cx="-200" cy="-100" r="6" class="circ-fat out-fat"/>
+					  	<circle cx="-200" cy="-100" r="3" class="circ-fat"/>
+					  	<circle cx="-240" cy="-180" r="6" class="circ-fat out-fat"/>
+					  	<circle cx="-240" cy="-180" r="3" class="circ-fat"/>
+					  	<circle class="circ-thin out-thin" cx="-150" cy="-96" r="5"/>
+					  	<circle class="circ-thin" cx="-150" cy="-96" r="3"/>
+						<path class="circuit-thin" 
+							d="M-150 -100 
+								L -150 -120
+								L -130 -140
+								L -70 -140
+								L -50 -160
+								L 0 -160
+								" />
+					  	<circle class="circ-thin out-thin" cx="4" cy="-160" r="5"/>
+					  	<circle class="circ-thin" cx="4" cy="-160" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="-140" cy="-96" r="4"/>
+					  	<circle class="circ-thin" cx="-140" cy="-96" r="3"/>
+						<path class="circuit-thin" 
+							d="M-140 -100 
+								L -140 -120
+								L -130 -130
+								L -70 -130
+								L -50 -150
+								L -30 -150
+								" />
+					  	<circle class="circ-thin out-thin" cx="-26" cy="-150" r="5"/>
+					  	<circle class="circ-thin" cx="-26" cy="-150" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="-130" cy="-96" r="5"/>
+					  	<circle class="circ-thin" cx="-130" cy="-96" r="3"/>
+						<path class="circuit-thin" 
+							d="M-130 -100 
+								L -130 -120
+								L -40 -120
+								" />
+					  	<circle class="circ-thin out-thin" cx="-36" cy="-120" r="5"/>
+					  	<circle class="circ-thin" cx="-36" cy="-120" r="3"/>
+						<path class="circuit-mid" 
+							d="M-170 -100 
+								L -170 -120
+								L -210 -160
+								" />
+						<circle cx="-170" cy="-100" r="4" class="circ-fat out-fat"/>
+						<circle cx="-170" cy="-100" r="2" class="circ-fat"/>
+					  	<circle cx="-210" cy="-160" r="4" class="circ-fat out-fat"/>
+					  	<circle cx="-210" cy="-160" r="2" class="circ-fat"/>
+					  	<circle class="circ-thin out-thin" cx="-208" cy="-82" r="5"/>
+					  	<circle class="circ-thin" cx="-208" cy="-82" r="3"/>
+						<path class="circuit-thin" 
+							d="M-210 -80 
+								L -220 -70
+								L -220 -20
+								" />
+					  	<circle class="circ-thin out-thin" cx="-220" cy="-16" r="5"/>
+					  	<circle class="circ-thin" cx="-220" cy="-16" r="3"/>
+						<path class="circuit-mid" 
+							d="M-180 -50 
+								L -190 -40
+								L -190 0
+								L -240 0
+								L -250 -10
+								" />
+						<circle cx="-180" cy="-50" r="4" class="circ-fat out-fat"/>
+						<circle cx="-180" cy="-50" r="2" class="circ-fat"/>
+					  	<circle cx="-250" cy="-10" r="4" class="circ-fat out-fat"/>						
+					  	<circle cx="-250" cy="-10" r="2" class="circ-fat"/>						
+					  	<circle class="circ-thin out-thin" cx="-160" cy="-54" r="5"/>
+					  	<circle class="circ-thin" cx="-160" cy="-54" r="3"/>
+						<path class="circuit-thin" 
+							d="M-160 -50 
+								L -160 -25
+								L -135 0
+								" />
+					  	<circle class="circ-thin out-thin" cx="-132" cy="4" r="5"/>
+					  	<circle class="circ-thin" cx="-132" cy="4" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="-145" cy="-54" r="5"/>
+					  	<circle class="circ-thin" cx="-145" cy="-54" r="3"/>
+						<path class="circuit-thin" 
+							d="M-145 -50 
+								L -145 -25
+								L -120 0
+								" />
+					  	<circle class="circ-thin out-thin" cx="-117" cy="4" r="5"/>
+					  	<circle class="circ-thin" cx="-117" cy="4" r="3"/>
+						<path class="circuit-mid" 
+							d="M-130 -50 
+								L -90 0
+								L -50 0
+								" />
+						<circle cx="-130" cy="-50" r="4" class="circ-fat out-fat"/>
+						<circle cx="-130" cy="-50" r="2" class="circ-fat"/>
+					  	<circle cx="-50" cy="0" r="4" class="circ-fat out-fat"/>						
+					  	<circle cx="-50" cy="0" r="2" class="circ-fat"/>						
+						<path class="circuit-fat" 
+							d="M-100 -50 
+								L -80 -50
+								L -60 -70
+								L -60 -90
+								L -90 -90
+								" />
+						<circle cx="-100" cy="-50" r="6" class="circ-fat out-fat"/>
+						<circle cx="-100" cy="-50" r="3" class="circ-fat"/>
+					  	<circle cx="-90" cy="-90" r="6" class="circ-fat out-fat"/>
+					  	<circle cx="-90" cy="-90" r="3" class="circ-fat"/>											
+					</g>
+					<g id="g2">
+						<image href="img/rl2.png" x="0" y="-50" height="50" width="100"/>
+						<image href="img/rl2g.png" x="0" y="-50" height="50" width="100" style="opacity: 0;"/>  	
+						<path class="circuit-fat" 
+							d="M-10 -30 
+								L -10 -50
+								L 10 -70
+								" />
+					  	<circle cx="-10" cy="-30" r="6" class="circ-fat out-fat"/>
+					  	<circle cx="-10" cy="-30" r="3" class="circ-fat"/>
+					  	<circle cx="10" cy="-70" r="6" class="circ-fat out-fat"/>
+					  	<circle cx="10" cy="-70" r="3" class="circ-fat"/>
+					  	<circle class="circ-thin out-thin" cx="18" cy="-48" r="5"/>
+					  	<circle class="circ-thin" cx="18" cy="-48" r="3"/>
+						<path class="circuit-thin" 
+							d="M20 -50 
+								L 40 -70
+								L 40 -120
+								L 20 -140
+								L 20 -160
+								" />
+					  	<circle class="circ-thin out-thin" cx="20" cy="-164" r="5"/>
+					  	<circle class="circ-thin" cx="20" cy="-164" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="38" cy="-48" r="5"/>
+					  	<circle class="circ-thin" cx="38" cy="-48" r="3"/>
+						<path class="circuit-thin" 
+							d="M40 -50 
+								L 60 -70
+								L 60 -120
+								L 40 -140
+								" />
+					  	<circle class="circ-thin out-thin" cx="38" cy="-142" r="5"/>
+					  	<circle class="circ-thin" cx="38" cy="-142" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="58" cy="-48" r="5"/>
+					  	<circle class="circ-thin" cx="58" cy="-48" r="3"/>
+						<path class="circuit-thin" 
+							d="M60 -50 
+								L 80 -70
+								L 80 -150
+								L 60 -150
+								" />
+					  	<circle class="circ-thin out-thin" cx="54" cy="-150" r="5"/>
+					  	<circle class="circ-thin" cx="54" cy="-150" r="3"/>
+					  	<circle cx="80" cy="-50" r="4" class="circ-fat out-fat"/>					  	
+					  	<circle cx="80" cy="-50" r="2" class="circ-fat"/>					  	
+						<path class="circuit-mid" 
+							d="M80 -50 
+								L 100 -50
+								L 130 -20
+								L 130 -100
+								L 160 -130
+								" />
+					  	<circle cx="160" cy="-130" r="3" class="circ-fat out-fat"/>					  	
+					  	<circle cx="160" cy="-130" r="2" class="circ-fat"/>					  	
+					  	<circle cx="110" cy="-10" r="6" class="circ-fat out-fat"/>					  	
+					  	<circle cx="110" cy="-10" r="3" class="circ-fat"/>					  	
+						<path class="circuit-fat" 
+							d="M110 -10 
+								L 130 10
+								L 150 -10
+								L 150 -90
+								" />	
+					  	<circle cx="150" cy="-90" r="6" class="circ-fat out-fat"/>					  	
+					  	<circle cx="150" cy="-90" r="3" class="circ-fat"/>					  	
+					  	<circle class="circ-thin out-thin" cx="76" cy="0" r="5"/>
+					  	<circle class="circ-thin" cx="76" cy="0" r="3"/>
+						<path class="circuit-thin" 
+							d="M 80 0
+								L 100 0
+								L 130 30
+								L 160 30
+								L 190 0
+								" />
+					  	<circle class="circ-thin out-thin" cx="192" cy="-2" r="5"/>
+					  	<circle class="circ-thin" cx="192" cy="-2" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="65" cy="-4" r="5"/>
+					  	<circle class="circ-thin" cx="65" cy="-4" r="3"/>
+						<path class="circuit-thin" 
+							d="M 65 0
+								L 65 30
+								L 35 60
+								" />
+					  	<circle class="circ-thin out-thin" cx="33" cy="62" r="5"/>
+					  	<circle class="circ-thin" cx="33" cy="62" r="3"/>
+					  	<circle cx="40" cy="0" r="4" class="circ-fat out-fat"/>					  	
+					  	<circle cx="40" cy="0" r="2" class="circ-fat"/>					  	
+						<path class="circuit-mid" 
+							d="M 40 0
+								L 40 30
+								L 10 60
+								L 10 80
+								" />	
+					  	<circle cx="10" cy="80" r="4" class="circ-fat out-fat"/>					  	
+					  	<circle cx="10" cy="80" r="2" class="circ-fat"/>					  	
+					  	<circle class="circ-thin out-thin" cx="24" cy="0" r="5"/>
+					  	<circle class="circ-thin" cx="24" cy="0" r="3"/>
+						<path class="circuit-thin" 
+							d="M 20 0
+								L 0 0
+								L -40 -40
+								L -60 -40
+								" />								
+					  	<circle class="circ-thin out-thin" cx="-64" cy="-40" r="5"/>
+					  	<circle class="circ-thin" cx="-64" cy="-40" r="3"/>
+					</g>
+					<g id="g3">
+						<image href="img/rl3.png" x="-250" y="100" height="50" width="120"/>
+						<image href="img/rl3g.png" x="-250" y="100" height="50" width="120" style="opacity: 0;"/>						
+						<path class="circuit-fat" 
+							d="M-260 100 
+								L -260 150
+								L -230 150
+								L -210 170
+								L -210 190
+								L -230 210
+								" />
+					  	<circle cx="-260" cy="100" r="6" class="circ-fat out-fat"/>
+					  	<circle cx="-260" cy="100" r="3" class="circ-fat"/>
+					  	<circle cx="-230" cy="210" r="6" class="circ-fat out-fat"/>
+					  	<circle cx="-230" cy="210" r="3" class="circ-fat"/>
+						<path class="circuit-thin" 
+							d="M-240 100 
+								L -220 80
+								L -200 80
+								L -150 30
+								" />
+					  	<circle class="circ-thin out-thin" cx="-242" cy="102" r="5"/>
+					  	<circle class="circ-thin" cx="-242" cy="102" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="-148" cy="28" r="5"/>
+					  	<circle class="circ-thin" cx="-148" cy="28" r="3"/>
+					  	<path class="circuit-thin" 
+							d="M-220 100 
+								L -200 100
+								L -180 80
+								L -160 60
+								L -130 60
+								L -130 20
+								" />
+					  	<circle class="circ-thin out-thin" cx="-224" cy="100" r="5"/>
+					  	<circle class="circ-thin" cx="-224" cy="100" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="-130" cy="16" r="5"/>
+					  	<circle class="circ-thin" cx="-130" cy="16" r="3"/>
+					  	<path class="circuit-mid" 
+							d="M-180 100 
+								L -160 100
+								L -160 80
+								L -110 80
+								L -110 40
+								L -90 20
+								" />		
+					  	<circle class="circ-fat out-fat" cx="-180" cy="100" r="4"/>
+					  	<circle class="circ-fat" cx="-180" cy="100" r="2"/>
+					  	<circle class="circ-fat out-fat" cx="-90" cy="20" r="4"/>						
+					  	<circle class="circ-fat" cx="-90" cy="20" r="2"/>						
+					  	<path class="circuit-thin" 
+							d="M-140 100 
+								L -120 100
+								L -100 120
+								L -100 160
+								L -60 160
+								L -20 120
+								" />								  	
+						<circle class="circ-thin out-thin" cx="-144" cy="100" r="5"/>
+						<circle class="circ-thin" cx="-144" cy="100" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="-18" cy="118" r="5"/>					
+					  	<circle class="circ-thin" cx="-18" cy="118" r="3"/>					
+					  	<path class="circuit-thin" 
+							d="M-200 150 
+								L -180 170
+								L -180 190
+								L -200 210
+								L -200 230
+								" />
+						<circle class="circ-thin out-thin" cx="-202" cy="148" r="5"/>
+						<circle class="circ-thin" cx="-202" cy="148" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="-200" cy="234" r="5"/>					
+					  	<circle class="circ-thin" cx="-200" cy="234" r="3"/>					
+						<path class="circuit-thin" 
+							d="M-120 120
+								L -120 160
+								L -100 180
+								L -60 180
+								L -30 150
+								L 0 180
+								" />								
+						<circle class="circ-thin out-thin" cx="-120" cy="116" r="5"/>
+						<circle class="circ-thin" cx="-120" cy="116" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="2" cy="182" r="5"/>	
+					  	<circle class="circ-thin" cx="2" cy="182" r="3"/>	
+					  	<path class="circuit-fat" 
+							d="M-160 150 
+								L -160 190
+								L -180 210
+								L -180 230
+								L -130 230
+								" />							
+					  	<circle class="circ-fat out-fat" cx="-160" cy="150" r="5"/>
+					  	<circle class="circ-fat" cx="-160" cy="150" r="3"/>						
+					  	<circle class="circ-fat out-fat" cx="-130" cy="230" r="5"/>
+					  	<circle class="circ-fat" cx="-130" cy="230" r="3"/>						
+					  	<path class="circuit-mid" 
+							d="M-140 150 
+								L -140 190
+								L -120 210
+								L -60 210
+								L -30 180
+								" />
+					  	<circle class="circ-fat out-fat" cx="-140" cy="150" r="4"/>
+					  	<circle class="circ-fat" cx="-140" cy="150" r="2"/>						
+					  	<circle class="circ-fat out-fat" cx="-30" cy="180" r="4"/>
+					  	<circle class="circ-fat" cx="-30" cy="180" r="2"/>						
+					</g>
+					<g id="g4">
+						<image href="img/rl4.png" x="45" y="100" height="55" width="120"/>
+						<image href="img/rl4g.png" x="45" y="100" height="55" width="120" style="opacity: 0;"/>  	
+						<path class="circuit-fat" 
+							d="M 30 150
+								L 30 120
+								L 0 90
+								L -30 90
+								" />
+					  	<circle cx="30" cy="150" r="6" class="circ-fat out-fat"/>
+					  	<circle cx="30" cy="150" r="3" class="circ-fat"/>
+					  	<circle cx="-30" cy="90" r="6" class="circ-fat out-fat"/>
+					  	<circle cx="-30" cy="90" r="3" class="circ-fat"/>
+						<path class="circuit-thin" 
+							d="M50 100 
+								L 30 80
+								L 30 30
+								L 0 60
+								" />
+					  	<circle class="circ-thin out-thin" cx="52" cy="102" r="5"/>
+					  	<circle class="circ-thin" cx="52" cy="102" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="-2" cy="62" r="5"/>
+					  	<circle class="circ-thin" cx="-2" cy="62" r="3"/>
+						<path class="circuit-thin" 
+							d="M70 100 
+								L 50 80
+								L 50 60
+								L 80 30
+								" />
+					  	<circle class="circ-thin out-thin" cx="72" cy="102" r="5"/>
+					  	<circle class="circ-thin" cx="72" cy="102" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="82" cy="28" r="5"/>
+					  	<circle class="circ-thin" cx="82" cy="28" r="3"/>
+						<path class="circuit-mid" 
+							d="M85 100 
+								L 85 70
+								L 110 70
+								L 110 30
+								L 80 0
+								" />
+					  	<circle cx="85" cy="100" r="4" class="circ-fat out-fat"/>
+					  	<circle cx="85" cy="100" r="2" class="circ-fat"/>
+					  	<circle cx="80" cy="0" r="4" class="circ-fat out-fat"/>
+					  	<circle cx="80" cy="0" r="2" class="circ-fat"/>
+						<path class="circuit-thin" 
+							d="M50 160 
+								L 20 190
+								L 50 220
+								L 90 220
+								" />
+					  	<circle class="circ-thin out-thin" cx="52" cy="158" r="5"/>
+					  	<circle class="circ-thin" cx="52" cy="158" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="94" cy="220" r="5"/>
+					  	<circle class="circ-thin" cx="94" cy="220" r="3"/>
+						<path class="circuit-mid" 
+							d="M80 160 
+								L 50 190
+								L 110 190
+								L 110 220
+								L 130 200
+								" />
+					  	<circle cx="80" cy="160" r="4" class="circ-fat out-fat"/>
+					  	<circle cx="80" cy="160" r="2" class="circ-fat"/>
+					  	<circle cx="130" cy="200" r="4" class="circ-fat out-fat"/>
+					  	<circle cx="130" cy="200" r="2" class="circ-fat"/>
+						<path class="circuit-thin" 
+							d="M100 160 
+								L 120 190
+								L 160 190
+								L 130 220
+								" />
+					  	<circle cx="98" cy="158" r="5" class="circ-thin out-thin"/>
+					  	<circle cx="98" cy="158" r="3" class="circ-thin"/>
+					  	<circle cx="128" cy="222" r="5" class="circ-thin out-thin"/>						
+					  	<circle cx="128" cy="222" r="3" class="circ-thin"/>						
+						<path class="circuit-thin" 
+							d="M120 160 
+								L 135 180
+								L 190 180
+								L 170 200
+								" />			
+					  	<circle cx="118" cy="158" r="5" class="circ-thin out-thin"/>
+					  	<circle cx="118" cy="158" r="3" class="circ-thin"/>
+					  	<circle cx="168" cy="202" r="5" class="circ-thin out-thin"/>					
+					  	<circle cx="168" cy="202" r="3" class="circ-thin"/>					
+						<path class="circuit-fat" 
+							d="M 140 160
+								L 200 160
+								L 220 180
+								L 200 200
+								L 200 220
+								" />
+					  	<circle cx="140" cy="160" r="6" class="circ-fat out-fat"/>
+					  	<circle cx="140" cy="160" r="3" class="circ-fat"/>
+					  	<circle cx="200" cy="220" r="6" class="circ-fat out-fat"/>					
+					  	<circle cx="200" cy="220" r="3" class="circ-fat"/>					
+						<path class="circuit-thin" 
+							d="M100 100 
+								L 140 60
+								L 140 20
+								L 160 0
+								" />
+					  	<circle cx="98" cy="102" r="5" class="circ-thin out-thin"/>
+					  	<circle cx="98" cy="102" r="3" class="circ-thin"/>
+					  	<circle cx="162" cy="-2" r="5" class="circ-thin out-thin"/>										
+					  	<circle cx="162" cy="-2" r="3" class="circ-thin"/>										
+						<path class="circuit-mid" 
+							d="M120 100 
+								L 170 100
+								L 170 60
+								L 200 30
+								" />
+					  	<circle cx="120" cy="100" r="4" class="circ-fat out-fat"/>
+					  	<circle cx="120" cy="100" r="2" class="circ-fat"/>
+					  	<circle cx="200" cy="30" r="4" class="circ-fat out-fat"/>		
+					  	<circle cx="200" cy="30" r="2" class="circ-fat"/>		
+						<path class="circuit-thin" 
+							d="M180 120 
+								L 200 100
+								L 200 60
+								L 240 60
+								" />
+					  	<circle cx="178" cy="122" r="5" class="circ-thin out-thin"/>
+					  	<circle cx="178" cy="122" r="3" class="circ-thin"/>
+					  	<circle cx="244" cy="60" r="5" class="circ-thin out-thin"/>	
+					  	<circle cx="244" cy="60" r="3" class="circ-thin"/>	
+						<path class="circuit-mid" 
+							d="M180 140 
+								L 220 140
+								L 220 80
+								L 240 80
+								L 260 60
+								" />
+					  	<circle cx="180" cy="140" r="4" class="circ-fat out-fat"/>
+					  	<circle cx="180" cy="140" r="2" class="circ-fat"/>
+					  	<circle cx="260" cy="60" r="4" class="circ-fat out-fat"/>	
+					  	<circle cx="260" cy="60" r="2" class="circ-fat"/>	
+					</g>
+					<g id="g5">
+						<image href="img/rl5.png" x="210" y="-65" height="50" width="100"/>
+						<image href="img/rl5g.png" x="210" y="-65" height="50" width="100" style="opacity: 0;"/>
+						<path class="circuit-fat" 
+							d="M200 -30 
+								L 180 -50
+								L 180 -100
+								" />
+					  	<circle cx="200" cy="-30" r="6" class="circ-fat out-fat"/>
+					  	<circle cx="200" cy="-30" r="3" class="circ-fat"/>
+					  	<circle cx="180" cy="-100" r="6" class="circ-fat out-fat"/>
+					  	<circle cx="180" cy="-100" r="3" class="circ-fat"/>
+						<path class="circuit-thin" 
+							d="M200 -70 
+								L 220 -90
+								L 220 -140
+								" />
+					  	<circle class="circ-thin out-thin" cx="198" cy="-68" r="5"/>
+					  	<circle class="circ-thin" cx="198" cy="-68" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="220" cy="-144" r="5"/>
+					  	<circle class="circ-thin" cx="220" cy="-144" r="3"/>
+						<path class="circuit-thin" 
+							d="M220 -70 
+								L 240 -90
+								L 240 -110
+								L 260 -110
+								L 280 -130
+								" />
+					  	<circle class="circ-thin out-thin" cx="218" cy="-68" r="5"/>
+					  	<circle class="circ-thin" cx="218" cy="-68" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="282" cy="-132" r="5"/>
+					  	<circle class="circ-thin" cx="282" cy="-132" r="3"/>
+						<path class="circuit-mid" 
+							d="M260 -70 
+								L 260 -90
+								L 280 -90
+								L 280 -110
+								L 310 -140
+								" />
+					  	<circle cx="260" cy="-70" r="4" class="circ-fat out-fat"/>
+					  	<circle cx="260" cy="-70" r="2" class="circ-fat"/>
+					  	<circle cx="310" cy="-140" r="4" class="circ-fat out-fat"/>
+					  	<circle cx="310" cy="-140" r="2" class="circ-fat"/>
+						<path class="circuit-mid" 
+							d="M200 -20 
+								L 160 20
+								L 160 50
+								" />						
+					  	<circle cx="200" cy="-20" r="4" class="circ-fat out-fat"/>
+					  	<circle cx="200" cy="-20" r="2" class="circ-fat"/>
+					  	<circle cx="160" cy="50" r="4" class="circ-fat out-fat"/>
+					  	<circle cx="160" cy="50" r="2" class="circ-fat"/>
+						<path class="circuit-thin" 
+							d="M220 -10 
+								L 190 20
+								L 190 50
+								L 160 80
+								L 130 50
+								" /> 						
+					  	<circle class="circ-thin out-thin" cx="222" cy="-12" r="5"/>
+					  	<circle class="circ-thin" cx="222" cy="-12" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="128" cy="48" r="5"/>
+					  	<circle class="circ-thin" cx="128" cy="48" r="3"/>
+						<path class="circuit-thin" 
+							d="M240 -10 
+								L 240 20
+								L 210 50
+								L 210 70
+								" />						
+					  	<circle class="circ-thin out-thin" cx="240" cy="-14" r="5"/>
+					  	<circle class="circ-thin" cx="240" cy="-14" r="3"/>
+					  	<circle class="circ-thin out-thin" cx="210" cy="74" r="5"/>
+					  	<circle class="circ-thin" cx="210" cy="74" r="3"/>
+						<path class="circuit-fat" 
+							d="M280 -10 
+								L 320 -10
+								L 320 -90
+								L 340 -110
+								" /> 						
+					  	<circle cx="280" cy="-10" r="5" class="circ-fat out-fat"/>
+					  	<circle cx="280" cy="-10" r="3" class="circ-fat"/>
+					  	<circle cx="340" cy="-110" r="5" class="circ-fat out-fat"/>
+					  	<circle cx="340" cy="-110" r="3" class="circ-fat"/>
+						<path class="circuit-mid" 
+							d="M260 -10 
+								L 260 50
+								L 230 80
+								" />  	
+					  	<circle cx="260" cy="-10" r="4" class="circ-fat out-fat"/>
+					  	<circle cx="260" cy="-10" r="2" class="circ-fat"/>
+					  	<circle cx="230" cy="80" r="4" class="circ-fat out-fat"/>
+					  	<circle cx="230" cy="80" r="2" class="circ-fat"/>
+					</g>
+				</svg>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/CSSRulePlugin.js"></script>
+	<script src="js/ScrambleText.min.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/ThreeOrbitControls.js"></script>
+    <script src="js/THREE.MeshLine.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

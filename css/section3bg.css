@@ -1,0 +1,175 @@
+/* CSS For Section 2 WebGL Background */
+/* GLOBE */
+.globe {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.globe .globe-list {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  list-style: none;
+}
+
+.globe .globe-list {
+  opacity: 0;
+  -webkit-transition: opacity 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: opacity 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: opacity 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: opacity 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.globe .globe-list.active {
+  opacity: 1;
+}
+
+.globe .globe-list > li {
+  opacity: 0.4;
+  position: absolute;
+  margin-left: -8px;
+  margin-top: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  /*background: #00FFD3;*/
+  -webkit-transition: opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -moz-transition: opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -ms-transition: opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: opacity 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.globe .globe-list > li.active {
+  opacity: 1;
+  margin-left: -30px;
+  margin-top: -30px;
+  width: 64px;
+  height: 64px;
+}
+
+.globe .globe-list > li:before {
+  content: "";
+  opacity: 0.5;
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -8px;
+  margin-top: -8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #00FFD3;
+  -webkit-animation: 2s pulse infinite linear;
+  -moz-animation: 2s pulse infinite linear;
+  -ms-animation: 2s pulse infinite linear;
+  -o-animation: 2s pulse infinite linear;
+  animation: 2s pulse infinite linear;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(4);
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: scale(4);
+  }
+}
+@-ms-keyframes pulse {
+  0% {
+    -ms-transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    -ms-transform: scale(4);
+  }
+}
+@-o-keyframes pulse {
+  0% {
+    -o-transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    -o-transform: scale(4);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(4);
+  }
+}
+.globe .globe-list > li.active:before {
+  margin-left: -12px;
+  margin-top: -12px;
+  width: 24px;
+  height: 24px;
+}
+
+.globe .globe-list > li.active{
+  background-image: url(../img/bg-tr.png);
+  background-size: cover;
+}
+.globe .globe-list > li.active:before {
+  background: rgba(255,255,255,0.5); 
+}
+
+.globe .globe-list .text {
+  position: absolute;
+  opacity: 0.8;
+  right: 21px;
+  top: 50%;
+  display: block;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  text-align: right;
+  text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000;
+  color: #FFFFFF;
+  white-space: nowrap;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.globe .globe-list > li.active .text {
+  opacity: 1;
+  right: 70px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+}
